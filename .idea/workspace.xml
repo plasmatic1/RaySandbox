@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b022bdb-ed79-4f3b-99fd-358a5cf096eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/base/ray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/sprite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mirrors/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mirrors/default.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rayboxes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rayboxes/default.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lens.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medium.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/lens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/medium.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ray.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mirror.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,31 +58,36 @@
     <session id="276811519">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="14" />
-          <entry key="py" value="2070" />
+          <entry key="dummy" value="56" />
+          <entry key="py" value="13570" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="2070" />
+          <entry key="PLAIN_TEXT" value="58" />
+          <entry key="Python" value="13570" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="log" value="1" />
+          <entry key="py" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -79,11 +97,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="215">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
+                <marker date="1551989678737" expanded="true" signature="426:643" ph="..." />
+                <marker date="1551989678737" expanded="true" signature="643:645" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mirrors/default.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -91,34 +120,47 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="8" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1544129491753" expanded="true" signature="250:264" ph="..." />
-                <marker date="1544129491753" expanded="true" signature="1217:1325" ph="..." />
+                <marker date="1551991592560" expanded="true" signature="18:1417" ph="..." />
+                <marker date="1551991592560" expanded="true" signature="818:975" ph="..." />
+                <marker date="1551991592560" expanded="true" signature="1003:1012" ph="..." />
+                <marker date="1551991592560" expanded="true" signature="1698:1703" ph="..." />
+                <marker date="1551991592560" expanded="true" signature="1847:1852" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lens.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/managers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1451">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1551990470761" expanded="true" signature="268:282" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mirror.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/base/sprite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+                <marker date="1551990009309" expanded="true" signature="89:94" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medium.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ray.py">
+        <entry file="file://$PROJECT_DIR$/base/ray.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -145,7 +187,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/exception/StateError.py" />
+        <option value="$PROJECT_DIR$/errors.py" />
+        <option value="$PROJECT_DIR$/basetypes/sprite.py" />
+        <option value="$PROJECT_DIR$/types/sprite.py" />
+        <option value="$PROJECT_DIR$/rayboxes/default.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/base/sprite.py" />
+        <option value="$PROJECT_DIR$/managers.py" />
+        <option value="$PROJECT_DIR$/mirrors/default.py" />
         <option value="$PROJECT_DIR$/util.py" />
       </list>
     </option>
@@ -168,6 +218,16 @@
               <item name="RaySandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="RaySandbox" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RaySandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaySandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="mirrors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaySandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaySandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="rayboxes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -177,6 +237,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2021100\Desktop\repos\RaySandbox\basetypes" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -228,15 +293,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16136725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2597865" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -253,28 +317,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mirror.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medium.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ray.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lens.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -282,14 +324,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util.py">
+    <entry file="file://$PROJECT_DIR$/base/medium.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mirror.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/lens.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exception/StateError.py" />
+    <entry file="file://$PROJECT_DIR$/errors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <marker date="1551385868120" expanded="true" signature="28:33" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/runpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/importlib/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="218" selection-start-line="218" selection-end-line="218" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/ray.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rayboxes/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1551988820003" expanded="true" signature="167:172" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/sprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1551990009309" expanded="true" signature="89:94" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1551989678737" expanded="true" signature="426:643" ph="..." />
+            <marker date="1551989678737" expanded="true" signature="643:645" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/latest.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10686" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1451">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1544129491753" expanded="true" signature="250:264" ph="..." />
-            <marker date="1544129491753" expanded="true" signature="1217:1325" ph="..." />
+            <marker date="1551990470761" expanded="true" signature="268:282" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mirrors/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <marker date="1551991592560" expanded="true" signature="18:1417" ph="..." />
+            <marker date="1551991592560" expanded="true" signature="818:975" ph="..." />
+            <marker date="1551991592560" expanded="true" signature="1003:1012" ph="..." />
+            <marker date="1551991592560" expanded="true" signature="1698:1703" ph="..." />
+            <marker date="1551991592560" expanded="true" signature="1847:1852" ph="..." />
           </folding>
         </state>
       </provider>

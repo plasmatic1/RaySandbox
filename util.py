@@ -1,64 +1,67 @@
-import logging
-import sys
-import os
+class LineSegment:
+    def __init__(self, x1, y1, x2, y2):
+        """
+        :param x1: X coordinate of the first point
+        :param y1: Y coordinate of the first point
+        :param x2: X coordinate of the second point
+        :param y2: Y coordinate of the second point
+        """
 
-# Constants
+        if x1 == x2:
+            self.vertical = True
+            self.x_int = x1
+        else:
+            self.vertical = False
+            self.slope = (y2 - y1) / (x2 - x1)
+            self.y_int = y1 - self.slope * x1
 
-SCRIPT_DIR = os.path.dirname(sys.argv[0])
+        self.x1 = x1
+        self.x2 = x2
 
-LOG_FORMAT = '%(obj_name)s %(asctime)-15s: %(message)s'
-LOG_DATE_FORMAT = '%m/%d/%Y %I:%M:%S %p'
-CANVAS_MANAGER_NAME = 'canv-manager-%d'
+    def calculate(self, x):
+        """
+        Calculates the y coordinate for a given x coordinate.  If the line is vertical, an error will be raised
+        :param x: The given x coordinate
+        :return: The y coordinate for that x coordinate
+        """
 
-# Global Variables
+        if self.vertical:
+            raise ArithmeticError('Cannot calculate y value for vertical line!')
 
-cur_id = 0
+        return self.slope * x + self.y_int
+
+    def intersects(self, other):
+        """
+        Finds the x coordinate of the intersection between this line and another line, or None if they do not intersect
+        :param other: The other line
+        :return: The intersection of the two lines, or None if they don't intersect
+        """
+
+        if self.vertical and other.vertical:
+            if self.x_int != other.x_int:
+                return None
+        # TODO: FINISH METHOD
 
 
-class SingleCanvasManager:
-    def __init__(self, canvas):
-        global cur_id
+def rectangular_offset(width, height):
+    """
+    Creates offsets for a rectangular Shape object.  This is used in the shape constructor
+    :param width: The width of the rectangle
+    :param height: The height of the rectangle
+    :return: The offsets for the rectangle
+    """
 
-        self.canvas = canvas
-        self.selected = None
-        self.selected_type = None
+    return [(-width, height), (width, height), (width, -height), (-width, -height)]
 
-        # Logging Initialization
 
-        self.debug_name = CANVAS_MANAGER_NAME % cur_id
+def shifted_rectangular_offset(width, height, xshift, yshift):
+    """
+    Creates offsets for a rectangular Shape object, but allows for shifting of the x and y values
+    :param width: The width of the rectangle
+    :param height: The height of the rectangle
+    :param xshift: The x shift of the rectangle
+    :param yshift: The y shift of the rectangle
+    :return: The offsets for the rectangle
+    """
 
-        self.logger = logging.getLogger(self.debug_name)
-        self.change_log_level()
-
-        stdout_handle = logging.StreamHandler(sys.stdout)
-        file_handle = logging.FileHandler(os.path.join(SCRIPT_DIR, 'latest.log'))
-
-        self.prepare_log_stream(stdout_handle)
-        self.prepare_log_stream(file_handle)
-
-        cur_id += 1
-
-        # Event Handler Initialization
-
-        canvas.bind('<ButtonPress-1>', self.on_begin_drag)
-        canvas.bind('<B1-Motion>', self.on_move_drag)
-        canvas.bind('<ButtonRelease-1>', self.on_end_drag)
-
-    def change_log_level(self, level=logging.INFO):
-        self.logger.setLevel(level)
-
-    def prepare_log_stream(self, stream):
-        stream.setFormatter(logging.Formatter(fmt=LOG_FORMAT))
-        self.logger.addHandler(stream)
-
-    def debug(self, msg, level=logging.INFO):
-        self.logger.log(level, msg, extra={'obj_name': self.debug_name})
-
-    def on_begin_drag(self, evt):
-        self.debug('Mouse press at (%d, %d)' % (evt.x, evt.y))
-
-    def on_move_drag(self, evt):
-        pass
-
-    def on_end_drag(self, evt):
-        self.debug('Mouse release at (%d, %d)' % (evt.x, evt.y))
+    return [(x + xshift, y + yshift) for x, y in rectangular_offset(width, height)]
